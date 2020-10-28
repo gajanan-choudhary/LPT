@@ -53,6 +53,11 @@ make
 export LD_LIBRARY_PATH="<lpt_root_dir>/pyLPT:$LD_LIBRARY_PATH"
 ```
 
+##### Optional: `pip install`
+After compiling the Python interface, you can pip install `pyLPT` by running
+`python3 -m pip install .` from `<lpt_root_dir>`. To uninstall the package, you
+can run `python3 -m pip uninstall pyLPT`.
+
 #### Parallel/MPI build
 For building the `pyLPT` in parallel, only `openmpi` has been tried out till
 now. In order to compile the Python shared library/interface, pass the
